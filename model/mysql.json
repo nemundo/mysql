@@ -1,0 +1,6 @@
+{
+    "app": "MySql",
+    "name": "mysql",
+    "namespace": "Nemundo\\MySql",
+    "is_deleted": false
+}
