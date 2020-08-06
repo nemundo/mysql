@@ -1,0 +1,17 @@
+{
+    "name": "nemundo/mysql",
+    "authors": [
+        {
+            "name": "Urs Lang",
+            "email": "urs.lang@gmail.com"
+        }
+    ],
+    "require": {
+        "nemundo/framework": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nemundo\\MySql\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,162 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "445143aaab9675699565a3812a5ae20b",
+    "packages": [
+        {
+            "name": "nemundo/core",
+            "version": "0.28",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nemundo/core.git",
+                "reference": "028b9e18d060a660031df41f21c95516c64fbf59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nemundo/core/zipball/028b9e18d060a660031df41f21c95516c64fbf59",
+                "reference": "028b9e18d060a660031df41f21c95516c64fbf59",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nemundo\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Urs Lang",
+                    "email": "urs.lang@gmail.com"
+                }
+            ],
+            "description": "Core Function",
+            "time": "2020-08-04T09:59:04+00:00"
+        },
+        {
+            "name": "nemundo/db",
+            "version": "0.34",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nemundo/db.git",
+                "reference": "65c085b590ad1daeba57edbf63bfa7d8a25bb2ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nemundo/db/zipball/65c085b590ad1daeba57edbf63bfa7d8a25bb2ab",
+                "reference": "65c085b590ad1daeba57edbf63bfa7d8a25bb2ab",
+                "shasum": ""
+            },
+            "require": {
+                "nemundo/core": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nemundo\\Db\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nemundo",
+                    "email": "urs.lang@gmail.com"
+                }
+            ],
+            "description": "Database Access",
+            "time": "2020-08-05T06:30:29+00:00"
+        },
+        {
+            "name": "nemundo/framework",
+            "version": "0.32",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nemundo/framework.git",
+                "reference": "861e725feaf11b6944808b1c222ba22ed14623ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nemundo/framework/zipball/861e725feaf11b6944808b1c222ba22ed14623ce",
+                "reference": "861e725feaf11b6944808b1c222ba22ed14623ce",
+                "shasum": ""
+            },
+            "require": {
+                "nemundo/core": "*",
+                "nemundo/db": "*",
+                "nemundo/html": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nemundo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Urs Lang",
+                    "email": "urs.lang@gmail.com"
+                }
+            ],
+            "description": "Nemundo Framework",
+            "time": "2020-08-05T07:26:10+00:00"
+        },
+        {
+            "name": "nemundo/html",
+            "version": "0.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nemundo/html.git",
+                "reference": "da429779f521a39b0747b4845022c34902ee8af9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nemundo/html/zipball/da429779f521a39b0747b4845022c34902ee8af9",
+                "reference": "da429779f521a39b0747b4845022c34902ee8af9",
+                "shasum": ""
+            },
+            "require": {
+                "nemundo/core": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nemundo\\Html\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nemundo",
+                    "email": "urs.lang@gmail.com"
+                }
+            ],
+            "description": "Html Generator",
+            "time": "2020-07-28T09:59:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

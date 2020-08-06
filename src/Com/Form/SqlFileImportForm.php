@@ -88,6 +88,7 @@ class SqlFileImportForm extends BootstrapForm
 
 
         $import = new MySqlDumpRestore();
+        $import->connection=$conn;
         $import->filename = $filename;
         $import->restoreDumpFile();
 
