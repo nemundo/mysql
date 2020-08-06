@@ -1,10 +1,14 @@
 # MySql
 
+### Installation
+```
+composer require nemundo/mysql
+```
+
 ### Submodule Installation
 ```
 git submodule add https://github.com/nemundo/mysql.git lib/mysql
 ```
-
 
 ### config.php
 ```

@@ -51,7 +51,7 @@ class SqlFileImportForm extends BootstrapForm
 
         $this->port = new BootstrapTextBox($this);
         $this->port->label = 'Port';
-        $this->port->value = '3333';
+        $this->port->value = '3306';
 
         $this->user = new BootstrapTextBox($this);
         $this->user->label = 'User';
@@ -74,9 +74,13 @@ class SqlFileImportForm extends BootstrapForm
     protected function onSubmit()
     {
 
-        $filename = (new TmpPath())
+
+
+/*        $filename = (new TmpPath())
             ->addPath('import.sql')
-            ->getFilename();
+            ->getFilename();*/
+
+        $filename='import.sql';
 
         $this->file->getFileRequest()->saveFile($filename);
 
