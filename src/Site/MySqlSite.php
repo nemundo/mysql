@@ -10,7 +10,10 @@ class MySqlSite extends AbstractSite
     protected function loadSite()
     {
         $this->title = 'MySql';
-        $this->url = 'mysql';
+        $this->url = '';
+
+        new DatabaseDeleteSite($this);
+
     }
 
     public function loadContent()

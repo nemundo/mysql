@@ -4,4 +4,6 @@
 require "../vendor/autoload.php";
 
 
-(new \Nemundo\MySql\Page\MySqlPage())->render();
+(new \Nemundo\MySql\Controller\MySqlController())->render();
+
+//(new \Nemundo\MySql\Page\MySqlPage())->render();

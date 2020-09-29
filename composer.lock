@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "nemundo/core",
-            "version": "0.28",
+            "version": "0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nemundo/core.git",
-                "reference": "028b9e18d060a660031df41f21c95516c64fbf59"
+                "reference": "8391d62d8c6091ec48f339a42a1c5e2bb30d5c02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nemundo/core/zipball/028b9e18d060a660031df41f21c95516c64fbf59",
-                "reference": "028b9e18d060a660031df41f21c95516c64fbf59",
+                "url": "https://api.github.com/repos/nemundo/core/zipball/8391d62d8c6091ec48f339a42a1c5e2bb30d5c02",
+                "reference": "8391d62d8c6091ec48f339a42a1c5e2bb30d5c02",
                 "shasum": ""
             },
             "type": "library",
@@ -37,20 +37,20 @@
                 }
             ],
             "description": "Core Function",
-            "time": "2020-08-04T09:59:04+00:00"
+            "time": "2020-09-07T14:33:25+00:00"
         },
         {
             "name": "nemundo/db",
-            "version": "0.34",
+            "version": "0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nemundo/db.git",
-                "reference": "65c085b590ad1daeba57edbf63bfa7d8a25bb2ab"
+                "reference": "6eb96e506b1406d07f8af60c6592f665ed7db9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nemundo/db/zipball/65c085b590ad1daeba57edbf63bfa7d8a25bb2ab",
-                "reference": "65c085b590ad1daeba57edbf63bfa7d8a25bb2ab",
+                "url": "https://api.github.com/repos/nemundo/db/zipball/6eb96e506b1406d07f8af60c6592f665ed7db9f8",
+                "reference": "6eb96e506b1406d07f8af60c6592f665ed7db9f8",
                 "shasum": ""
             },
             "require": {
@@ -73,20 +73,20 @@
                 }
             ],
             "description": "Database Access",
-            "time": "2020-08-05T06:30:29+00:00"
+            "time": "2020-08-27T10:16:20+00:00"
         },
         {
             "name": "nemundo/framework",
-            "version": "0.32",
+            "version": "0.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nemundo/framework.git",
-                "reference": "861e725feaf11b6944808b1c222ba22ed14623ce"
+                "reference": "70c543dd287bcafb93eb13a7ec353c38d5841682"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nemundo/framework/zipball/861e725feaf11b6944808b1c222ba22ed14623ce",
-                "reference": "861e725feaf11b6944808b1c222ba22ed14623ce",
+                "url": "https://api.github.com/repos/nemundo/framework/zipball/70c543dd287bcafb93eb13a7ec353c38d5841682",
+                "reference": "70c543dd287bcafb93eb13a7ec353c38d5841682",
                 "shasum": ""
             },
             "require": {
@@ -111,20 +111,20 @@
                 }
             ],
             "description": "Nemundo Framework",
-            "time": "2020-08-05T07:26:10+00:00"
+            "time": "2020-09-23T08:54:02+00:00"
         },
         {
             "name": "nemundo/html",
-            "version": "0.45",
+            "version": "0.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nemundo/html.git",
-                "reference": "da429779f521a39b0747b4845022c34902ee8af9"
+                "reference": "3d9c9ee860131199016dbfc948ca18a03522ae97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nemundo/html/zipball/da429779f521a39b0747b4845022c34902ee8af9",
-                "reference": "da429779f521a39b0747b4845022c34902ee8af9",
+                "url": "https://api.github.com/repos/nemundo/html/zipball/3d9c9ee860131199016dbfc948ca18a03522ae97",
+                "reference": "3d9c9ee860131199016dbfc948ca18a03522ae97",
                 "shasum": ""
             },
             "require": {
@@ -147,7 +147,7 @@
                 }
             ],
             "description": "Html Generator",
-            "time": "2020-07-28T09:59:41+00:00"
+            "time": "2020-08-27T10:16:21+00:00"
         }
     ],
     "packages-dev": [],
