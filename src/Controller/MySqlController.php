@@ -15,7 +15,6 @@ class MySqlController extends AbstractWebController
 
         new MySqlSite($this);
 
-        // TODO: Implement loadController() method.
     }
 
 }
