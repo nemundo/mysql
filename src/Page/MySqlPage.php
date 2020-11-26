@@ -3,6 +3,7 @@
 namespace Nemundo\MySql\Page;
 
 use Nemundo\Admin\Com\Table\AdminTable;
+use Nemundo\Admin\Com\Widget\AdminWidget;
 use Nemundo\Admin\MySql\Form\MySqlDatabaseForm;
 use Nemundo\Com\TableBuilder\TableHeader;
 use Nemundo\Com\TableBuilder\TableRow;
@@ -15,6 +16,7 @@ use Nemundo\MySql\Com\Form\SqlFileImportForm;
 use Nemundo\MySql\Connection\SessionConnection;
 use Nemundo\MySql\Parameter\DatabaseParameter;
 use Nemundo\MySql\Site\DatabaseDeleteSite;
+use Nemundo\Package\Bootstrap\Layout\BootstrapTwoColumnLayout;
 
 class MySqlPage extends AbstractTemplateDocument
 {
@@ -32,7 +34,10 @@ class MySqlPage extends AbstractTemplateDocument
         new SqlFileImportForm($this);
 
 
-        $table = new AdminTable($this);
+        $layout=new BootstrapTwoColumnLayout($this);
+
+
+        $table = new AdminTable($layout->col1);
 
         $header = new TableHeader($table);
         $header->addText('Database');
@@ -55,7 +60,11 @@ class MySqlPage extends AbstractTemplateDocument
 
         DbConfig::$defaultConnection =  new SessionConnection();
 
-        new MySqlDatabaseForm($this);
+
+        $widget=new AdminWidget($layout->col2);
+        $widget->widgetTitle='Create Database';
+
+        new MySqlDatabaseForm($widget);
 
 
         return parent::getContent();

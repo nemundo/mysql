@@ -17,7 +17,7 @@ class SessionConnection extends MySqlConnection
         $this->connectionParameter->host = 'localhost';
         $this->connectionParameter->port = '3333';  // '3306';
         $this->connectionParameter->user = 'root';
-        $this->connectionParameter->password = '';
+        $this->connectionParameter->password = '123456';
 
 
     }
