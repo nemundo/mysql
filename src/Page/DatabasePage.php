@@ -5,6 +5,7 @@ namespace Nemundo\MySql\Page;
 
 
 use Nemundo\Admin\Com\Table\AdminTable;
+use Nemundo\App\MySqlAdmin\Com\Table\MySqlDataTable;
 use Nemundo\Com\TableBuilder\TableHeader;
 use Nemundo\Com\TableBuilder\TableRow;
 use Nemundo\Com\Template\AbstractTemplateDocument;
@@ -17,6 +18,11 @@ class DatabasePage extends AbstractTemplateDocument
 
     public function getContent()
     {
+
+
+        /*
+        $table=new MySqlDataTable($this);
+        $table->tableName=()
 
 
 /*

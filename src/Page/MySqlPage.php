@@ -1,7 +1,8 @@
 <?php
 
-namespace Nemundo\MySql\Page;
+namespace Nemundo\App\MySql\Page;
 
+use Nemundo\Admin\Com\Table\AdminClickableTable;
 use Nemundo\Admin\Com\Table\AdminTable;
 use Nemundo\Admin\Com\Widget\AdminWidget;
 use Nemundo\Admin\MySql\Form\MySqlDatabaseForm;
@@ -16,7 +17,9 @@ use Nemundo\MySql\Com\Form\SqlFileImportForm;
 use Nemundo\MySql\Connection\SessionConnection;
 use Nemundo\MySql\Parameter\DatabaseParameter;
 use Nemundo\MySql\Site\DatabaseDeleteSite;
+use Nemundo\MySql\Site\DatabaseSite;
 use Nemundo\Package\Bootstrap\Layout\BootstrapTwoColumnLayout;
+use Nemundo\Package\Bootstrap\Table\BootstrapClickableTableRow;
 
 class MySqlPage extends AbstractTemplateDocument
 {
@@ -37,7 +40,7 @@ class MySqlPage extends AbstractTemplateDocument
         $layout=new BootstrapTwoColumnLayout($this);
 
 
-        $table = new AdminTable($layout->col1);
+        $table = new AdminClickableTable($layout->col1);
 
         $header = new TableHeader($table);
         $header->addText('Database');
@@ -48,8 +51,13 @@ class MySqlPage extends AbstractTemplateDocument
         $reader->connection =  new SessionConnection();
         foreach ($reader->getData() as $database) {
 
-            $row = new TableRow($table);
+            $row = new BootstrapClickableTableRow($table);
             $row->addText($database->databaseName);
+
+            $site =clone(DatabaseSite::$site);
+            $site->addParameter(new DatabaseParameter($database->databaseName));
+            $row->addClickableSite($site);
+
 
             $site=clone(DatabaseDeleteSite::$site);
             $site->addParameter(new DatabaseParameter($database->databaseName));
