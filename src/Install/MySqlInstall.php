@@ -1,6 +1,6 @@
 <?php
 namespace Nemundo\MySql\Install;
-use Nemundo\Project\Install\AbstractInstall;
+use Nemundo\App\Application\Type\Install\AbstractInstall;
 use Nemundo\Model\Setup\ModelCollectionSetup;
 use Nemundo\MySql\Data\MySqlCollection;
 use Nemundo\MySql\Application\MySqlApplication;
